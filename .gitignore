@@ -1,0 +1,79 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+jim-db/node_modules/
+jpn-db/node_modules/
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files (can opt-in for committing if needed)
+.env.local
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+
+# Firebase/service account secrets
+*-db/serviceAccountKey*.json
+
+# Ignore raw and encrypted data snapshots
+ssm-db/SSM_json.json
+ssm-db/SSM_json_encrypted.json
+
+# Safe across all db folders (jpn, jim, ssm)
+*-db/*_json*.json
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+
+# Local database files
+*.sqlite
+*.sqlite3
+*.db
+*.sql
+
+# Logs
+logs/
+*.log
+
+# Supabase local files (if using Supabase CLI)
+.supabase/
+
+# Generated files
+*.map
+
+# Temporary files
+*.tmp
+*.temp
